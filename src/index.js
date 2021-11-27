@@ -1,10 +1,12 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import "./style/style.css"; 
-import "./style/fonts.css";
 import Routing from "./router";
+import { render } from "@testing-library/react";
+
+
 
 ReactDOM.render(
+    
 <React.StrictMode>
 
 <Routing />

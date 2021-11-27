@@ -580,24 +580,24 @@ html{
     background-position: center;
 }
 #img-container1{
-    background-image: url('jacket.jpg');
+    background-image: url('./jacket.jpg');
 }
 #img-container2{
-    background-image: url('example1.jpg');
+    background-image: url('./example1.jpg');
 }
 #img-container3{
-    background-image: url('example2.jpg');
+    background-image: url('./example2.jpg');
 }
 #img-container4{
-    background-image: url('jacket.jpg');
+    background-image: url('./jacket.jpg');
 }
 #img-container5{
-    background-image: url('jacket.jpg');
+    background-image: url('./jacket.jpg');
 }
 .img-of-featured{
     width: 100%;
     height: 100%;
-    background-image: url('example2.jpg');
+    background-image: url('./example2.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }

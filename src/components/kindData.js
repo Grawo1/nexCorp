@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import KindDetails from './kindDetails';
 function KindData ({gender}){
 
+    console.log(gender)
 const [item, setItem] = useState([]);
 
 useEffect(()=>{
@@ -19,8 +20,8 @@ useEffect(()=>{
 return(
     <div className="topkategorie">
     {item.map(item => ( 
-  <Link to={`/kindDetails/${gender}/${item.kind_name}`}>
-    <p key={item.id}>{item.name}</p>
+  <Link key={item.id} to={`/kindDetails/${gender}/${item.kind_name}`}>
+    <p >{item.name}</p>
     </Link>
     ))}
     </div>   )

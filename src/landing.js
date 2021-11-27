@@ -2,15 +2,19 @@ import React from "react";
 import KindData from "./components/kindData";
 import ProductData from "./components/productData";
 import Gender from "./components/genderData";
-import "./style/style.css"; 
-import "./style/fonts.css";
-import "./style/product.css";
+import "./components/style/style.css";
+import "./components/style/fonts.css";
+import "./components/style/product.css";
 
-function Landing(){
-    
+function Landing({gender}){
+
+if(!{gender}){
+    gender="men";
+}
 
 return(
 
+<main>
 <React.StrictMode>
 <header>
         <section id="first-block">
@@ -34,20 +38,20 @@ return(
                             <p className="dropdown-content-title">
                                 Kategorie</p>
                             <div className="dropdown-content-text">
-                                <a href="#">bundy</a>
-                                <a href="#">šaty</a>
-                                <a href="#">trička</a>
-                                <a href="#">trička</a>
+                                <a href="/">bundy</a>
+                                <a href="/">šaty</a>
+                                <a href="/">trička</a>
+                                <a href="/">trička</a>
                             </div>
                         </div>
                         <div className="dropdown-content-units">
                             <p className="dropdown-content-title">
                                 Značky</p>
                             <div className="dropdown-content-text">
-                                <a href="#">puma</a>
-                                <a href="#">vans</a>
-                                <a href="#">adidas</a>
-                                <a href="#">boss</a>
+                                <a href="/">puma</a>
+                                <a href="/">vans</a>
+                                <a href="/">adidas</a>
+                                <a href="/">boss</a>
                             </div>
                         </div>
                     </div>
@@ -61,20 +65,20 @@ return(
                             <p className="dropdown-content-title">
                                 Kategorie</p>
                             <div className="dropdown-content-text">
-                                <a href="#">bundy</a>
-                                <a href="#">šaty</a>
-                                <a href="#">trička</a>
-                                <a href="#">trička</a>
+                                <a href="/">bundy</a>
+                                <a href="/">šaty</a>
+                                <a href="/">trička</a>
+                                <a href="/">trička</a>
                             </div>
                         </div>
                         <div className="dropdown-content-units">
                             <p className="dropdown-content-title">
                                 Značky</p>
                             <div className="dropdown-content-text">
-                                <a href="#">puma</a>
-                                <a href="#">vans</a>
-                                <a href="#">adidas</a>
-                                <a href="#">boss</a>
+                                <a href="/">puma</a>
+                                <a href="/">vans</a>
+                                <a href="/">adidas</a>
+                                <a href="/">boss</a>
                             </div>
                         </div>
                     </div>
@@ -88,23 +92,23 @@ return(
                             <p className="dropdown-content-title">
                                 Kategorie</p>
                             <div className="dropdown-content-text">
-                                <a href="#">bundy</a>
-                                <a href="#">šaty</a>
-                                <a href="#">trička</a>
-                                <a href="#">trička</a>
-                                <a href="#">outdor</a>
-                                <a href="#">fitness</a>
-                                <a href="#">jóga</a>
+                                <a href="/">bundy</a>
+                                <a href="/">šaty</a>
+                                <a href="/">trička</a>
+                                <a href="/">trička</a>
+                                <a href="/">outdor</a>
+                                <a href="/">fitness</a>
+                                <a href="/">jóga</a>
                             </div>
                         </div>
                         <div className="dropdown-content-units">
                             <p className="dropdown-content-title">
                                 Značky</p>
                             <div className="dropdown-content-text">
-                                <a href="#">puma</a>
-                                <a href="#">vans</a>
-                                <a href="#">adidas</a>
-                                <a href="#">boss</a>
+                                <a href="/">puma</a>
+                                <a href="/">vans</a>
+                                <a href="/">adidas</a>
+                                <a href="/">boss</a>
                             </div>
                         </div>
                     </div>
@@ -118,20 +122,20 @@ return(
                             <p className="dropdown-content-title">
                                 Kategorie</p>
                             <div className="dropdown-content-text">
-                                <a href="#">bundy</a>
-                                <a href="#">šaty</a>
-                                <a href="#">trička</a>
-                                <a href="#">trička</a>
+                                <a href="/">bundy</a>
+                                <a href="/">šaty</a>
+                                <a href="/">trička</a>
+                                <a href="/">trička</a>
                             </div>
                         </div>
                         <div className="dropdown-content-units">
                             <p className="dropdown-content-title">
                                 Značky</p>
                             <div className="dropdown-content-text">
-                                <a href="#">puma</a>
-                                <a href="#">vans</a>
-                                <a href="#">adidas</a>
-                                <a href="#">boss</a>
+                                <a href="/">puma</a>
+                                <a href="/">vans</a>
+                                <a href="/">adidas</a>
+                                <a href="/">boss</a>
                             </div>
                         </div>
                     </div>
@@ -147,16 +151,16 @@ return(
                         <p className="mobile-menu-main-title">
                             Kategorie</p>
                         <div className="mobile-menu-main-text">
-                            <a href="">
+                            <a href="/">
                                 výprodej
                             </a>
-                            <a href="">
+                            <a href="/">
                                 outfity
                             </a>
-                            <a href="">
+                            <a href="/">
                                 sport
                             </a>
-                            <a href="">
+                            <a href="/">
                                 doplňky
                             </a>
                         </div>
@@ -165,16 +169,16 @@ return(
                         <p className="mobile-menu-main-title">
                             Značky</p>
                         <div className="mobile-menu-main-text">
-                            <a href="">
+                            <a href="/">
                                 puma
                             </a>
-                            <a href="">
+                            <a href="/">
                                 addidas
                             </a>
-                            <a href="">
+                            <a href="/">
                                 vans
                             </a>
-                            <a href="">
+                            <a href="/">
                                 jordan
                             </a>
                         </div>
@@ -196,7 +200,7 @@ return(
                         <h4>kabáty</h4>
                         <h1>Teplé kabáty do zimy</h1>
                         <div className="button1">
-                            <a href="">
+                            <a href="/">
                                 <p>přejít</p>
                             </a>
                         </div>
@@ -212,7 +216,7 @@ return(
                     <h4>kalhoty</h4>
                     <h1>Teplé kalhoty do zimy</h1>
                     <div className="button1">
-                        <a href="">
+                        <a href="/">
                             <p>přejít</p>
                         </a>
                     </div>
@@ -227,7 +231,7 @@ return(
                     <h4>mikyny</h4>
                     <h1>Teplé mikyny do zimy</h1>
                     <div className="button1">
-                        <a href="">
+                        <a href="/">
                             <p>přejít</p>
                         </a>
                     </div>
@@ -242,7 +246,7 @@ return(
                     <h4>kraťasy</h4>
                     <h1>Teplé kraťasy do zimy</h1>
                     <div className="button1">
-                        <a href="">
+                        <a href="/">
                             <p>přejít</p>
                         </a>
                     </div>
@@ -257,7 +261,7 @@ return(
                     <h4>džíny</h4>
                     <h1>Teplé džíny do zimy</h1>
                     <div className="button1">
-                        <a href="">
+                        <a href="/">
                             <p>přejít</p>
                         </a>
                     </div>
@@ -275,7 +279,7 @@ return(
             <h2>Oblíbené kategorie</h2>
         </div>
         
-        <KindData />
+        <KindData gender={gender} />
         
     </section>
     <section id="fifth-block">
@@ -288,22 +292,21 @@ return(
                 <p className="motto">Off the wall!</p>
                 <h1>VANS</h1>
                 <div className="button2">
-                    <a href="">
+                    <a href="/">
                         <p>přejít</p>
                     </a>
                 </div>
             </article>
         </div>
     </section>
+    <footer></footer>
+    </React.StrictMode>
 
-    
-    <ProductData />
+    <ProductData gender={gender} />
+ 
     
    
-    <footer></footer>
-
-</React.StrictMode>
-
+  </main>
 
     )
 }

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import Gender from './genderData';
 
 function ProductData ({gender}){
 
