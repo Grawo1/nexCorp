@@ -4,12 +4,11 @@ import GenderFilter from "./components/genderFiltered";
 import KindDetails from "./components/kindDetails";
 import ProductDetails from "./components/productDetails";
 import Landing from "./landing";
+import Cart from "./cart"
 
 
 
 function Routing() {
-    console.log("this is working");
-<Landing></Landing>
     return (
         
         <Router>
@@ -19,18 +18,20 @@ function Routing() {
                         
                     </Route>
                    
-                    <Route exact path="localhost/:gender">
+                    <Route exact path="/:gender">
                         <GenderFilter />
                         
                     </Route>
 
+                    <Route exact path="/eshop/cart">
+                        <Cart />
+                    </Route>
                     
-                    
-                    <Route path="localhost/productDetails/:id">
+                    <Route path="/productDetails/:id">
                         <ProductDetails />
                     </Route>
 
-                    <Route path="localhost/kindDetails/:gender/:kind">
+                    <Route path="/kindDetails/:gender/:kind">
                         <KindDetails />
                     </Route>
 

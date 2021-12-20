@@ -3,9 +3,6 @@ import { BrowserRouter as Router, useParams} from 'react-router-dom';
 import KindData from "./kindData";
 import ProductData from "./productData";
 import Gender from "./genderData";
-import "./style/style.css";
-import "./style/fonts.css";
-import "./style/product.css";
 
 
 

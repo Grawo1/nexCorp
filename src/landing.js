@@ -2,9 +2,7 @@ import React from "react";
 import KindData from "./components/kindData";
 import ProductData from "./components/productData";
 import Gender from "./components/genderData";
-import "./components/style/style.css";
-import "./components/style/fonts.css";
-import "./components/style/product.css";
+import { Link } from "react-router-dom";
 
 function Landing({gender}){
 
@@ -25,7 +23,7 @@ return(
                 <h1>NexCorp</h1>
             </div>
                <Gender />  
-           
+        
         </section>
         <section id="second-block">
             <div id="second-header">
