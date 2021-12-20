@@ -3,18 +3,38 @@ import { useState, useEffect } from "react";
 import AddToCart from "./addToCart";
 
 function Cart(){
+        const [cart, setCart] = useState([]);
+       
+        
+function storage(){
     
-    console.log("Cart")
-        const items =  window.localStorage.getItem('List');
+    var values = [],
+    keys = Object.keys(localStorage),
+    i = keys.length;
 
-    return(
-     <div>
-         <h2>List</h2>
-     <div>{items}</div>
-     
-         </div>
-   
- )
-
+while ( i-- ) {
+    values.push( localStorage.getItem(keys[i]) );
 }
+console.log(values);
+return {values};
+}
+
+    useEffect(()=>{        
+        storage();
+        
+    },[])
+    
+
+    return (
+    <section id="productList">
+        <h2>{storage().values}</h2>
+
+    </section>   
+    )
+    //<AddToCart i={item.id} item = {item.name}/>
+    }
+
+    
+
+
 export default Cart;
