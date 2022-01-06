@@ -1,0 +1,74 @@
+/*MATOUŠ PRAŽÁK 3.IT SPŠ TRUTNOV, ŠKOLNÍ 101*/ 
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    position: relative;   
+    background-repeat: no-repeat;
+    color: var(--color-text-darkgrey);
+}
+html{
+    width: var(--html-width-calculated);
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--color-white);
+}
+footer{
+    height: 200px;
+}
+
+/*< < < < < < SCROLL > > > > > >*/  
+
+
+::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+	background: 0 0
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-white);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-darkgrey);
+    border-radius: var(--border-radius-small);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-lightgrey);
+}
+
+/*< < < < < < IMAGES > > > > > >*/
+.img-container{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+.img-container1{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:  80%;
+}
+
+.active{
+    display: grid;
+}
+.non-active{
+    display: none;
+}
+@media screen and (max-width: 500px){
+
+    html{
+        width: calc(100vw);
+        overflow-x: hidden;
+      }
+    }

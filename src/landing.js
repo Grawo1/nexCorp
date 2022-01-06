@@ -3,6 +3,12 @@ import KindData from "./components/kindData";
 import ProductData from "./components/productData";
 import Gender from "./components/genderData";
 import { Link } from "react-router-dom";
+import "./style/styleproducts.css";
+import "./style/style.css";
+import "./style/variables.css";
+import "./style/fonts.css";
+import "./style/styleforall.css";
+import "./style/product.css";
 
 function Landing({gender}){
 
