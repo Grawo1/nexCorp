@@ -4,9 +4,7 @@ import GenderFilter from "./components/genderFiltered";
 import KindDetails from "./components/kindDetails";
 import ProductDetails from "./components/productDetails";
 import Landing from "./landing";
-import Cart from "./cart"
-
-
+import CartApp from "./cart/cartApp";
 
 function Routing() {
     return (
@@ -18,13 +16,14 @@ function Routing() {
                         
                     </Route>
                    
+
+                    <Route exact path="/cart">
+                        <CartApp />
+                    </Route>
+
                     <Route exact path="/:gender">
                         <GenderFilter />
                         
-                    </Route>
-
-                    <Route exact path="/eshop/cart">
-                        <Cart />
                     </Route>
                     
                     <Route path="/productDetails/:id">
